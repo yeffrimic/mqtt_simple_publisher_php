@@ -1,20 +1,42 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<title>simple mqtt publisher</title>
-<meta charset="utf-8">
-</head>
-<body>
-<h1> simple mqtt publisher </h1>
-<form name="formulario" method="post" action="mqttpub.php">
-message: <input type="text" name="message" value=""><br>
-server: <input type="text" name="server" value=""><br>
-port: <input type="text" name="port" value=""><br>
-username: <input type="text" name="username" value=""><br>
-password: <input type="password" name="password" value=""><br>
-<input type="submit" />
-<p>made by Yeffri J. Salazar, from Najt Labs Guatemala 2016 all this codes are open-source you can see it in this <a href="https://github.com/yeffrimic/mqtt_simple_publisher_php">repository</a></p>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Elegant Contact Form</title>
+    
+    
+    <link rel="stylesheet" href="css/reset.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+    
+  </head>
+
+  <body>
+
+    <h1> simple mqtt publisher </h1>
+<form class="cf" method="post" action="mqttpub.php">
+  <div class="half left cf">
+    <input type="text" name="server" value="" id="input-name" placeholder="server">
+    <input type="text" name="port" value="" id="input-name" placeholder="port">
+    <input type="text" name="topic" value="" id="input-name" placeholder="topic">
+    <input type="text" name="ClientID" value="" id="input-name" placeholder="ClientID">
+    <input type="text" name="username" value="" id="input-name" placeholder="username">
+    <input type="password" type="password" name="password" value="" id="input-password" placeholder="password">
+  </div>
+  <div class="half right cf">
+    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+  </div>
+  <input type="submit" value="Submit" id="input-submit">
+  <p>Made by Yeffri J. Salazar, from Najt Labs Guatemala 2016 all this codes are open-source you can see it in this <a href="https://github.com/yeffrimic/mqtt_simple_publisher_php">repository</a>and <a href="http://codepen.io/markmurray/pen/JsAhx/">css template</a></p>
 </form>
-</body>
+    
+    
+    
+    
+  </body>
 </html>

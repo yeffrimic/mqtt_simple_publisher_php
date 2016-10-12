@@ -6,8 +6,9 @@
   $password = $_POST['password']; 
   $message = $_POST['message'];
   $topic = $_POST['topic'];
+  $clientID = $_POST['ClientID'];
   //MQTT client id to use for the device. "" will generate a client id automatically
-  $mqtt = new phpMQTT($host, $port, "ClientID".rand()); 
+  $mqtt = new phpMQTT($host, $port, $clientID); 
 
   if ($mqtt->connect(true,NULL,$username,$password)) {
     $mqtt->publish($topic,$message, 0);
