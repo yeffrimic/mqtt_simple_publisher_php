@@ -1,4 +1,4 @@
-#cloud_temperature_php
+#mqtt simple publisher
 
 this is a simple site that use php to publish in a MQTT broker
 
